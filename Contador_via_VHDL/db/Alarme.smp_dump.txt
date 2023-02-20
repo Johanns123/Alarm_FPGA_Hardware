@@ -1,0 +1,14 @@
+
+State Machine - |Alarme|my_local
+Name my_local.local4 my_local.local3 my_local.local2 my_local.local1 
+my_local.local1 0 0 0 0 
+my_local.local2 0 0 1 1 
+my_local.local3 0 1 0 1 
+my_local.local4 1 0 0 1 
+
+State Machine - |Alarme|mux_display
+Name mux_display.disp4 mux_display.disp3 mux_display.disp2 mux_display.disp1 
+mux_display.disp1 0 0 0 0 
+mux_display.disp2 0 0 1 1 
+mux_display.disp3 0 1 0 1 
+mux_display.disp4 1 0 0 1 
