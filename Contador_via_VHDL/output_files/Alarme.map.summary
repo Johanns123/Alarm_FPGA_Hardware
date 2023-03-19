@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sat Feb 18 12:01:34 2023
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Elaboration Status : Successful - Sat Mar 18 17:52:51 2023
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Alarme
 Top-level Entity Name : Alarme
 Family : Cyclone IV E
-Total logic elements : 381
-    Total combinational functions : 358
-    Dedicated logic registers : 176
-Total registers : 176
-Total pins : 22
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

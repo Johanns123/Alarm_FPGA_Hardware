@@ -1,317 +1,617 @@
 ------------------------------------------------------------
-TimeQuest Timing Analyzer Summary
+Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'enable1'
-Slack : -6.207
-TNS   : -33.511
+Type  : Slow 1200mV 85C Model Setup 'display_multiplex:mux_disp|enable1'
+Slack : -7.799
+TNS   : -51.908
 
 Type  : Slow 1200mV 85C Model Setup 'CLK_50'
-Slack : -3.850
-TNS   : -240.975
+Slack : -3.805
+TNS   : -127.837
 
-Type  : Slow 1200mV 85C Model Setup 'clk_1s'
-Slack : -3.096
-TNS   : -65.444
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x2|clk'
+Slack : -3.572
+TNS   : -75.168
 
-Type  : Slow 1200mV 85C Model Setup 'clk_10ms'
-Slack : -2.970
-TNS   : -63.564
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x1|clk_1ms'
+Slack : -3.538
+TNS   : -59.884
 
-Type  : Slow 1200mV 85C Model Setup 'clk_1ms'
-Slack : -2.764
-TNS   : -77.053
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x2|clk_1ms'
+Slack : -3.395
+TNS   : -52.270
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x5|clk_1ms'
+Slack : -3.380
+TNS   : -46.864
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x4|clk_1ms'
+Slack : -2.984
+TNS   : -51.904
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x3|clk_1ms'
+Slack : -2.815
+TNS   : -48.139
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x1|clk'
+Slack : -2.782
+TNS   : -77.380
 
 Type  : Slow 1200mV 85C Model Setup 'RESET'
-Slack : -1.330
-TNS   : -4.955
+Slack : -2.531
+TNS   : -8.781
 
-Type  : Slow 1200mV 85C Model Hold 'enable1'
-Slack : -2.167
-TNS   : -13.703
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:x5|clk'
+Slack : -1.525
+TNS   : -5.151
 
-Type  : Slow 1200mV 85C Model Hold 'clk_1ms'
-Slack : -0.517
-TNS   : -1.027
-
-Type  : Slow 1200mV 85C Model Hold 'CLK_50'
-Slack : 0.211
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x1|clk_1ms'
+Slack : 0.294
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk_10ms'
-Slack : 0.434
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x1|clk'
+Slack : 0.439
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk_1s'
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x2|clk'
 Slack : 0.453
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'RESET'
-Slack : 0.738
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x5|clk_1ms'
+Slack : 0.453
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'clk_1s'
-Slack : -0.137
-TNS   : -3.560
+Type  : Slow 1200mV 85C Model Hold 'CLK_50'
+Slack : 0.454
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'clk_10ms'
-Slack : -0.122
-TNS   : -4.127
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x2|clk_1ms'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x3|clk_1ms'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x4|clk_1ms'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:x5|clk'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'display_multiplex:mux_disp|enable1'
+Slack : 0.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RESET'
+Slack : 1.385
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'CLK_50'
-Slack : 0.137
+Slack : 0.143
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'clk_1ms'
-Slack : 1.129
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x5|clk'
+Slack : 0.289
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'clk_1ms'
-Slack : -1.231
-TNS   : -24.512
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x2|clk'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x5|clk_1ms'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x3|clk_1ms'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x2|clk_1ms'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x1|clk_1ms'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x4|clk_1ms'
+Slack : 0.474
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clock_generator:x1|clk'
+Slack : 0.912
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x1|clk'
+Slack : -1.002
+TNS   : -37.712
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x4|clk_1ms'
+Slack : -0.477
+TNS   : -8.093
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x2|clk_1ms'
+Slack : -0.455
+TNS   : -7.735
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x3|clk_1ms'
+Slack : -0.455
+TNS   : -7.731
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x1|clk_1ms'
+Slack : -0.454
+TNS   : -7.718
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x5|clk_1ms'
+Slack : -0.447
+TNS   : -7.599
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x2|clk'
+Slack : -0.369
+TNS   : -9.584
+
+Type  : Slow 1200mV 85C Model Removal 'clock_generator:x5|clk'
+Slack : -0.263
+TNS   : -1.052
 
 Type  : Slow 1200mV 85C Model Removal 'CLK_50'
-Slack : -0.890
-TNS   : -9.180
-
-Type  : Slow 1200mV 85C Model Removal 'clk_10ms'
-Slack : 0.087
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'clk_1s'
-Slack : 0.104
-TNS   : 0.000
+Slack : -0.120
+TNS   : -4.185
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_50'
 Slack : -3.000
-TNS   : -107.090
+TNS   : -56.532
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RESET'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_1ms'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x1|clk'
 Slack : -1.487
 TNS   : -62.454
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_10ms'
-Slack : -1.487
-TNS   : -56.506
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_1s'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x2|clk'
 Slack : -1.487
 TNS   : -38.662
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'enable1'
-Slack : 0.251
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x1|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x2|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x3|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x4|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x5|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:x5|clk'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'display_multiplex:mux_disp|enable1'
+Slack : 0.422
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'enable1'
-Slack : -6.048
-TNS   : -32.186
+Type  : Slow 1200mV 0C Model Setup 'display_multiplex:mux_disp|enable1'
+Slack : -7.582
+TNS   : -50.243
 
 Type  : Slow 1200mV 0C Model Setup 'CLK_50'
-Slack : -3.548
-TNS   : -221.484
+Slack : -3.513
+TNS   : -117.484
 
-Type  : Slow 1200mV 0C Model Setup 'clk_1s'
-Slack : -2.791
-TNS   : -58.901
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x2|clk'
+Slack : -3.375
+TNS   : -68.853
 
-Type  : Slow 1200mV 0C Model Setup 'clk_10ms'
-Slack : -2.758
-TNS   : -58.358
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x1|clk_1ms'
+Slack : -3.339
+TNS   : -56.791
 
-Type  : Slow 1200mV 0C Model Setup 'clk_1ms'
-Slack : -2.513
-TNS   : -68.219
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x5|clk_1ms'
+Slack : -3.166
+TNS   : -43.572
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x2|clk_1ms'
+Slack : -3.163
+TNS   : -47.897
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x4|clk_1ms'
+Slack : -2.719
+TNS   : -47.180
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x3|clk_1ms'
+Slack : -2.555
+TNS   : -43.399
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x1|clk'
+Slack : -2.493
+TNS   : -70.699
 
 Type  : Slow 1200mV 0C Model Setup 'RESET'
-Slack : -1.161
-TNS   : -4.242
+Slack : -2.288
+TNS   : -7.855
 
-Type  : Slow 1200mV 0C Model Hold 'enable1'
-Slack : -1.931
-TNS   : -12.171
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:x5|clk'
+Slack : -1.406
+TNS   : -4.582
 
-Type  : Slow 1200mV 0C Model Hold 'clk_1ms'
-Slack : -0.422
-TNS   : -0.824
-
-Type  : Slow 1200mV 0C Model Hold 'CLK_50'
-Slack : 0.069
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x1|clk_1ms'
+Slack : 0.235
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk_1s'
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x1|clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x2|clk'
 Slack : 0.402
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk_10ms'
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x2|clk_1ms'
 Slack : 0.403
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'RESET'
-Slack : 0.620
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x3|clk_1ms'
+Slack : 0.403
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'clk_1s'
-Slack : -0.078
-TNS   : -1.976
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x5|clk_1ms'
+Slack : 0.403
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'clk_10ms'
-Slack : -0.060
-TNS   : -2.000
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x4|clk_1ms'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_50'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:x5|clk'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'display_multiplex:mux_disp|enable1'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RESET'
+Slack : 1.302
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'CLK_50'
-Slack : 0.150
+Slack : 0.159
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'clk_1ms'
-Slack : 1.143
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x5|clk'
+Slack : 0.244
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'clk_1ms'
-Slack : -1.169
-TNS   : -23.281
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x2|clk'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x5|clk_1ms'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x3|clk_1ms'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x1|clk_1ms'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x2|clk_1ms'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x4|clk_1ms'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clock_generator:x1|clk'
+Slack : 0.946
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x1|clk'
+Slack : -0.961
+TNS   : -36.193
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x4|clk_1ms'
+Slack : -0.403
+TNS   : -6.851
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x2|clk_1ms'
+Slack : -0.390
+TNS   : -6.630
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x1|clk_1ms'
+Slack : -0.386
+TNS   : -6.562
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x3|clk_1ms'
+Slack : -0.383
+TNS   : -6.511
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x5|clk_1ms'
+Slack : -0.381
+TNS   : -6.476
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x2|clk'
+Slack : -0.336
+TNS   : -8.734
+
+Type  : Slow 1200mV 0C Model Removal 'clock_generator:x5|clk'
+Slack : -0.197
+TNS   : -0.788
 
 Type  : Slow 1200mV 0C Model Removal 'CLK_50'
-Slack : -0.946
-TNS   : -9.363
-
-Type  : Slow 1200mV 0C Model Removal 'clk_10ms'
-Slack : 0.097
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'clk_1s'
-Slack : 0.115
-TNS   : 0.000
+Slack : -0.119
+TNS   : -4.165
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_50'
 Slack : -3.000
-TNS   : -107.098
+TNS   : -56.532
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RESET'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_1ms'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x1|clk'
 Slack : -1.487
 TNS   : -62.454
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_10ms'
-Slack : -1.487
-TNS   : -56.506
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_1s'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x2|clk'
 Slack : -1.487
 TNS   : -38.662
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'enable1'
-Slack : 0.042
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x1|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x2|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x3|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x4|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x5|clk_1ms'
+Slack : -1.487
+TNS   : -26.766
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:x5|clk'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'display_multiplex:mux_disp|enable1'
+Slack : 0.303
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'enable1'
-Slack : -2.320
-TNS   : -11.697
+Type  : Fast 1200mV 0C Model Setup 'display_multiplex:mux_disp|enable1'
+Slack : -2.864
+TNS   : -19.065
 
 Type  : Fast 1200mV 0C Model Setup 'CLK_50'
-Slack : -1.074
-TNS   : -60.641
+Slack : -1.024
+TNS   : -32.687
 
-Type  : Fast 1200mV 0C Model Setup 'clk_1s'
-Slack : -0.755
-TNS   : -13.932
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x2|clk'
+Slack : -0.979
+TNS   : -17.850
 
-Type  : Fast 1200mV 0C Model Setup 'clk_10ms'
-Slack : -0.655
-TNS   : -9.428
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x1|clk_1ms'
+Slack : -0.949
+TNS   : -14.405
 
-Type  : Fast 1200mV 0C Model Setup 'clk_1ms'
-Slack : -0.629
-TNS   : -8.039
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x5|clk_1ms'
+Slack : -0.906
+TNS   : -9.596
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x2|clk_1ms'
+Slack : -0.853
+TNS   : -10.493
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x1|clk'
+Slack : -0.808
+TNS   : -13.085
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x4|clk_1ms'
+Slack : -0.623
+TNS   : -10.546
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x3|clk_1ms'
+Slack : -0.614
+TNS   : -9.483
 
 Type  : Fast 1200mV 0C Model Setup 'RESET'
-Slack : -0.040
-TNS   : -0.046
+Slack : -0.574
+TNS   : -1.611
 
-Type  : Fast 1200mV 0C Model Hold 'enable1'
-Slack : -1.094
-TNS   : -7.079
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:x5|clk'
+Slack : -0.097
+TNS   : -0.097
 
-Type  : Fast 1200mV 0C Model Hold 'clk_1ms'
-Slack : -0.322
-TNS   : -0.637
-
-Type  : Fast 1200mV 0C Model Hold 'CLK_50'
-Slack : -0.218
-TNS   : -0.218
-
-Type  : Fast 1200mV 0C Model Hold 'clk_10ms'
-Slack : 0.149
+Type  : Fast 1200mV 0C Model Hold 'display_multiplex:mux_disp|enable1'
+Slack : 0.087
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk_1s'
-Slack : 0.186
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x1|clk_1ms'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x5|clk'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x5|clk_1ms'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_50'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x2|clk_1ms'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x3|clk_1ms'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x4|clk_1ms'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x1|clk'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:x2|clk'
+Slack : 0.187
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'RESET'
-Slack : 0.281
+Slack : 0.551
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'clk_1s'
-Slack : -0.194
-TNS   : -5.027
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x2|clk'
+Slack : 0.009
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'clk_10ms'
-Slack : -0.188
-TNS   : -6.354
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x1|clk'
+Slack : 0.240
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'clk_1ms'
-Slack : 0.339
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x5|clk'
+Slack : 0.502
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x5|clk_1ms'
+Slack : 0.524
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x1|clk_1ms'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x2|clk_1ms'
+Slack : 0.528
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x3|clk_1ms'
+Slack : 0.528
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clock_generator:x4|clk_1ms'
+Slack : 0.539
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'CLK_50'
-Slack : 0.686
+Slack : 0.691
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'clk_1ms'
-Slack : -0.521
-TNS   : -10.366
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x1|clk'
+Slack : -0.415
+TNS   : -15.602
+
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x2|clk'
+Slack : -0.169
+TNS   : -4.377
 
 Type  : Fast 1200mV 0C Model Removal 'CLK_50'
-Slack : -0.306
-TNS   : -4.937
+Slack : -0.071
+TNS   : -2.485
 
-Type  : Fast 1200mV 0C Model Removal 'clk_10ms'
-Slack : 0.035
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x4|clk_1ms'
+Slack : 0.080
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'clk_1s'
-Slack : 0.042
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x2|clk_1ms'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x3|clk_1ms'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x1|clk_1ms'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x5|clk_1ms'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clock_generator:x5|clk'
+Slack : 0.138
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_50'
 Slack : -3.000
-TNS   : -80.169
+TNS   : -42.816
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RESET'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_1ms'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x1|clk'
 Slack : -1.000
 TNS   : -42.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_10ms'
-Slack : -1.000
-TNS   : -38.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_1s'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x2|clk'
 Slack : -1.000
 TNS   : -26.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'enable1'
-Slack : 0.341
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x1|clk_1ms'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x2|clk_1ms'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x3|clk_1ms'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x4|clk_1ms'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x5|clk_1ms'
+Slack : -1.000
+TNS   : -18.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:x5|clk'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'display_multiplex:mux_disp|enable1'
+Slack : 0.275
 TNS   : 0.000
 
 ------------------------------------------------------------

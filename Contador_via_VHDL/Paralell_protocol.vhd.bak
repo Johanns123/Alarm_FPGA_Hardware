@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Paralell_protocol is
+	port(
+		signal CLK 		: in std_logic;
+		signal RESET  	: in std_logic;
+		signal button 	: in  std_logic_vector(3 downto 0);
+		signal start_signal : out std_logic;
+		signal dado1, dado2, dado3, dado4 : out unsigned(3 downto 0);
+		signal modo1, modo2, modo3, modo4 : out unsigned(1 downto 0);
+		signal contando : in std_logic;
+		signal led_interface :  out std_logic_vector(3 downto 0)
+	);
+	
+end entity Paralell_protocol;
+
+architecture RTL of Paralell_protocol is
+
+begin
+
+end architecture RTL;

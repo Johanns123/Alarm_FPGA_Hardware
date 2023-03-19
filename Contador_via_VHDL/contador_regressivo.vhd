@@ -1,0 +1,129 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity contador_regressivo is
+	port(
+		signal CLK 				: in std_logic;
+		signal RESET  			: in std_logic;
+		signal noise_signal	: out std_logic;
+		signal start			: in std_logic;
+		signal dado1_read, dado2_read,
+				 dado3_read, dado4_read		 : in unsigned(3 downto 0);
+		signal dado1_signal, dado2_signal,
+		dado3_signal, dado4_signal 		 : out unsigned(3 downto 0);
+		signal modo1, modo2, modo3, modo4 : out unsigned(1 downto 0);
+		signal contando 		: out std_logic;
+		signal led_contagem_signal 	:  out std_logic_vector(3 downto 0)
+	);
+	
+end entity contador_regressivo;
+
+architecture RTL of contador_regressivo is
+
+signal start_beep 	  : std_logic := '0';
+signal receiveing_data : std_logic := '1';
+signal noise 			  : std_logic := '0';
+signal led_contagem	  : std_logic_vector (3 downto 0) := (others => '0');
+signal dado1, dado2, dado3, dado4 : unsigned(3 downto 0) := (others => '0');
+
+begin
+
+	noise_signal <= noise;
+	led_contagem_signal <= led_contagem;
+	dado1_signal <= dado1;
+	dado2_signal <= dado2;
+	dado3_signal <= dado3;
+	dado4_signal <= dado4;
+	
+	COUNTING : process(CLK, RESET) is
+	begin
+		if RESET = '0' then
+			noise <= '0';
+			start_beep <= '0';
+			dado1 <= (others => '0');
+			dado2 <= (others => '0');
+			dado3 <= (others => '0');
+			dado4 <= (others => '0');
+			modo1 <= "00";
+			modo2 <= "00";
+			modo3 <= "00";
+			modo4 <= "00";
+			receiveing_data <= '0';
+			led_contagem <= (others => '0');
+			contando <= '0';
+		else
+			if rising_edge(CLK) then
+				if start_beep = '1' then
+					case noise is
+						when '0' =>	noise <= '1';
+						when '1' => noise <= '0';
+					end case;
+				else
+					noise <= '0';
+				end if;
+				if start = '1' then
+					if receiveing_data = '1' then
+						dado1 <= dado1_read;
+						dado2 <= dado2_read;
+						dado3 <= dado3_read;
+						dado4 <= dado4_read;
+						modo1 <= "01";
+						modo2 <= "01";
+						modo3 <= "01";
+						modo4 <= "01";
+						receiveing_data <= '0';
+					else
+						--inicio a contagem
+						led_contagem <= std_logic_vector(unsigned(led_contagem) + 1);
+						dado1 <= dado1 - 1;
+						if(dado1 = X"0" and dado2 /= X"0") then
+							contando <= '1';
+							dado1 <= X"9";
+							dado2 <= dado2 - 1;
+							
+						elsif(dado2 = X"0"  and dado3 /= X"0" and dado1 = X"0") then
+							contando <= '1';
+							dado1 <= X"9";
+							dado2 <= X"5";
+							dado3 <= dado3 - 1;
+
+						elsif(dado3 = X"0"  and dado4 /= X"0" and dado2 = X"0" and dado1 = X"0") then
+							contando <= '1';
+							dado1 <= X"9";
+							dado2 <= X"5";
+							dado3 <= X"9";
+							dado4 <= dado4 - 1;
+						
+						elsif(dado4 = X"0"  and dado1 = X"0") then
+							dado1 <= X"0";
+							dado2 <= X"0";
+							dado3 <= X"0";
+							dado4 <= X"0";
+							modo1 <= "10";
+							modo2 <= "10";
+							modo3 <= "10";
+							modo4 <= "10";
+							led_contagem <= (others => '0');
+							start_beep <= '1';
+						end if;
+					end if;
+				else 
+					dado1 <= X"0";
+					dado2 <= X"0";
+					dado3 <= X"0";
+					dado4 <= X"0";
+					modo1 <= "00";
+					modo2 <= "00";
+					modo3 <= "00";
+					modo4 <= "00";
+					receiveing_data <= '1';
+					contando <= '0';
+					led_contagem <= (others => '0');
+					start_beep <= '0';
+				end if;
+			end if;
+		end if;
+	end process COUNTING;
+
+end architecture RTL;

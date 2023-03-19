@@ -1,0 +1,46 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity clock_generator is
+	port(
+		signal CLK_50 	: in std_logic;
+		signal RESET  	: in std_logic;
+		signal counter : in  unsigned(29 downto 0);
+		signal clk	  	: out std_logic
+	);
+	
+end entity clock_generator;
+
+architecture RTL of is
+
+signal counter0 : unsigned(29 downto 0) := (others => '0');
+signal State_machine_clk : std_logic := '0';
+
+begin
+
+	clk_pricipal  : process(CLK_50, RESET) is
+	begin
+		if RESET = '0' then
+			counter0 <= (others => '0');	
+		else
+			if falling_edge(CLK_50) then
+				if(counter0 < counter) then	--contador de 1 ms de periodo
+					counter0  <= counter0 + 1;
+				else
+					contador0 <= (others => '0');
+					case State_machine_clk is
+						when '0' =>
+							clk <= '0';
+							State_machine_clk <= '1';
+						
+						when '1' =>
+							clk <= '1';
+							State_machine_clk <= '0';
+					end case;
+				end if;					
+			end if;
+		end if;
+	end process clk_pricipal;
+
+end architecture RTL;

@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HEX1",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4",
+					"strict" : false
+				},
+				{
+					"name" : "LEDY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BEEP",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
